@@ -39,5 +39,14 @@ export const FavoritesProvider = ({ children }) => {
     </FavoritesContext.Provider>
   );
 };
+export const useFavorites = () => {
+  const context = useContext(FavoritesContext);
+  
+  if (!context) {
+    throw new Error('useFavorites can only be accessed within FavoritesProvider');
+  }
+  
+  console.log('useFavorites hook:', context);
+  return context;
+};
 
-export default FavoritesContext;
