@@ -16,3 +16,4 @@ const RecipeCard = ({ recipe }) => {
     </Link>
   );
 };
+export default RecipeCard;
