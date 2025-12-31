@@ -68,6 +68,7 @@
 }
 
 
+
 .spinner-container {
   display: flex;
   flex-direction: column;
@@ -99,6 +100,7 @@
     transform: rotate(360deg); 
   }
 }
+
 
 
 .recipe-card {
@@ -135,6 +137,8 @@
 }
 
 
+
+
 .error-container {
   display: flex;
   flex-direction: column;
@@ -152,6 +156,8 @@
   text-align: center;
   margin: 10px 0 0 0;
 }
+
+
 
 
 .home-container {
@@ -210,4 +216,24 @@
   color: #7f8c8d;
   font-size: 14px;
   line-height: 1.6;
+}
+
+
+.category-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-top: 40px;
 }

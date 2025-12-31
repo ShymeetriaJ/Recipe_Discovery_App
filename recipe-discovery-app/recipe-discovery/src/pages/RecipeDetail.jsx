@@ -48,7 +48,43 @@ console.log('RecipeDetail - recipeId:', recipeId, 'loading:', loading, 'data:', 
   }
 console.log('Total ingredients found:', ingredients.length);
 
-  return (<div></div>)
+  return (
+    <div className="recipe-detail-container">
+      <div className="recipe-header">
+        <img 
+          src={recipe.strMealThumb} 
+          alt={recipe.strMeal}
+          className="recipe-detail-image"
+        />
+        <div className="recipe-info">
+          <h1 className="recipe-title">{recipe.strMeal}</h1>
+          <p className="recipe-category">
+            Category: {recipe.strCategory} | Area: {recipe.strArea}
+          </p>
+          <button 
+            onClick={handleFavoriteToggle}
+            className={`favorite-button ${isRecipeFavorited ? 'favorited' : ''}`}
+          >
+            {isRecipeFavorited ? 'Remove from Favorites' : 'Add to Favorites'}
+          </button>
+        </div>
+      </div>
+      <div className="recipe-content">
+        <div className="ingredients-section">
+          <h2>Ingredients</h2>
+          <ul className="ingredients-list">
+            {ingredients.map((ingredient, index) => (
+              <li key={index}>{ingredient}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="instructions-section">
+          <h2>Instructions</h2>
+          <p className="instructions-text">{recipe.strInstructions}</p>
+        </div>
+      </div>
+    </div>
+  )
 };
 export default RecipeDetail;
            
