@@ -12,6 +12,8 @@ const RecipeDetail = () => {
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`
   );
 
+console.log('RecipeDetail - recipeId:', recipeId, 'loading:', loading, 'data:', data);
+
   if (loading) {
     return <Spinner />;
   }
@@ -44,6 +46,7 @@ const RecipeDetail = () => {
       ingredients.push(`${measure} ${ingredient}`);
     }
   }
+console.log('Total ingredients found:', ingredients.length);
 
   return (<div></div>)
 };
