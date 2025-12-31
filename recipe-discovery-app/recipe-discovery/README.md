@@ -1,16 +1,59 @@
-# React + Vite
+# SBA Title: 
+SBA Advanced React: Recipe Discovery App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Date Completed: 
+December 29, 2025
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Project Description: 
+ 
+In this assessment, I applied the skills I developed throughout my React training to build a 
 
-## React Compiler
+# Links, Usage, and Instructions:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Adding a New Task
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Viewing Tasks
+ 
+
+Filtering Tasks
+
+
+
+Updating Task Status
+
+
+Deleting Tasks
+
+
+
+Data Persistence
+
+
+
+# My process:
+
+ 
+
+# My reflection:
+
+
+
+
+
+
+# Acknowledgments:
+My classmate Shakira helped me with resources that are still helping my understanding. My classmate Javon's code helped me dig into more research about the filter functionality. I watched a couple of videos from class and office hours for code examples and understanding. Youtube: Webstylepress, Bro Code, Code Stoic and dozens of other youtube channels.
+
+
+# Resources:
+learnjavascript.online 
+https://react.dev/reference/react/useState
+https://react.dev/reference/react/useCallback
+https://devhints.io/reac
+stackoverflow.com/sort-an-array
+Discord group discussion 
+
+# Troubleshooting:

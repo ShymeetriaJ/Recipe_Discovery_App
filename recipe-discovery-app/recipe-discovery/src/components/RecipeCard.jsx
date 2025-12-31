@@ -4,14 +4,14 @@ const RecipeCard = ({ recipe }) => {
   console.log('RecipeCard rendering:', recipe);
 
   return (
-    <Link to={`/recipe/${recipe.idMeal}`} style={styles.card}>
+    <Link to={`/recipe/${recipe.idMeal}`} className="recipe-card">
       <img 
         src={recipe.strMealThumb} 
         alt={recipe.strMeal}
-        style={styles.image}
+        className="recipe-card-image"
       />
-      <div style={styles.content}>
-        <h3 style={styles.title}>{recipe.strMeal}</h3>
+      <div className="recipe-card-content">
+        <h3 className="recipe-card-title">{recipe.strMeal}</h3>
       </div>
     </Link>
   );
