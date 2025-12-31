@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   const { data, loading, error } = useFetch('https://www.themealdb.com/api/json/v1/1/categories.php');
 
+  console.log('Home page - loading:', loading, 'data:', data, 'error:', error);
   if (loading) {
     return <Spinner />;
   }
