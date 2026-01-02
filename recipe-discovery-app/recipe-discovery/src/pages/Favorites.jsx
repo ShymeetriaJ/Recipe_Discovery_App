@@ -20,10 +20,38 @@ const Favorites = () => {
       </div>
     );
   }
-
   return (
+    <div className="favorites-container">
+      <h1 className="page-title">Your Favorite Recipes</h1>
+      <div className="recipes-grid">
+        {favorites.map((recipeId) => (
+          <FavoriteRecipeCard key={recipeId} recipeId={recipeId} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-  )
+const FavoriteRecipeCard = ({ recipeId }) => {
+  const { data, loading, error } = useFetch(
+    `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${recipeId}`
+  );
+
+  if (loading) {
+    return <Spinner />;
+  }
+
+  if (error) {
+    return <ErrorMessage message={error} />;
+  }
+
+  const recipe = data?.meals?.[0];
+
+  if (!recipe) {
+    return null;
+  }
+
+  return <RecipeCard recipe={recipe} />;
 };
 
 export default Favorites;
