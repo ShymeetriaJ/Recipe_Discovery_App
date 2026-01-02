@@ -2,27 +2,19 @@ import { createContext, useContext } from 'react';
 import useLocalStorage from '../hooks/useLocalStorage';
 
 const FavoritesContext = createContext();
-console.log('FavoritesContext created');
 
 export const FavoritesProvider = ({ children }) => {
-  console.log('FavoritesProvider rendering');
-
   const [favorites, setFavorites] = useLocalStorage('favorites', []);
-  console.log('Current favorites:', favorites);
-
   const addFavorite = (recipeId) => {
-    console.log('Add favorite:', recipeId);
     setFavorites([...favorites, recipeId]);
   };
 
   const removeFavorite = (recipeId) => {
-    console.log('Remove favorite:', recipeId);
     setFavorites(favorites.filter(id => id !== recipeId));
   };
 
   const isFavorite = (recipeId) => {
     const result = favorites.includes(recipeId);
-    console.log('Checking if', recipeId, 'is favorite:', result);
     return result;
   };
 
@@ -45,8 +37,6 @@ export const useFavorites = () => {
   if (!context) {
     throw new Error('useFavorites can only be accessed within FavoritesProvider');
   }
-  
-  console.log('useFavorites hook:', context);
   return context;
 };
 

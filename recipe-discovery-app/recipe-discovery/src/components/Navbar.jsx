@@ -5,11 +5,8 @@ const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
-  console.log('Current search:', searchQuery);
-
   const handleSearch = (e) => {
     e.preventDefault();
-    console.log('Search form submitted with query:', searchQuery);
 
     if (searchQuery.trim()) {
       navigate(`/search?query=${searchQuery}`);

@@ -8,8 +8,6 @@ const SearchResults = () => {
   const [searchParams] = useSearchParams();
   const query = searchParams.get('query');
 
-  console.log('SearchResults - query:', query);
-
   const { data, loading, error } = useFetch(
     `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`
   );
@@ -19,7 +17,7 @@ const SearchResults = () => {
   }
 
   if (error) {
-    return <ErrorMessage message={error} />;
+    return <ErrorMessage message={error} />;                               
   }
 
   const recipes = data?.meals || [];

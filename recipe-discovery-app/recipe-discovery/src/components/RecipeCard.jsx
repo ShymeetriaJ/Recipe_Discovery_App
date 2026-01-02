@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 const RecipeCard = ({ recipe }) => {
-  console.log('RecipeCard rendering:', recipe);
 
   return (
     <Link to={`/recipe/${recipe.idMeal}`} className="recipe-card">

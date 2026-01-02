@@ -1,5 +1,4 @@
 const Spinner = () => {
-  console.log('Spinner rendering');
 
   return (
     <div className="spinner-container">

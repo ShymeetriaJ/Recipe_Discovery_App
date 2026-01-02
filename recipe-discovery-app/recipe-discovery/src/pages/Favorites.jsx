@@ -7,8 +7,6 @@ import ErrorMessage from '../components/ErrorMessage';
 const Favorites = () => {
   const { favorites } = useFavorites();
 
-  console.log('Favorites page:', favorites);
-
   if (favorites.length === 0) {
     return (
       <div className="favorites-container">

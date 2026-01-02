@@ -11,8 +11,6 @@ const CategoryPage = () => {
     `https://www.themealdb.com/api/json/v1/1/filter.php?c=${categoryName}`
   );
 
-console.log('CategoryPage - categoryName:', categoryName, 'data:', data, 'loading:', loading, 'error:', error);
-
   if (loading) {
     return <Spinner />;
   }
