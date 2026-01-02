@@ -1,6 +1,6 @@
 /* Navigation Bar */
 .navbar {
-  background-color: #2c3e50;
+  background-color: #4c534e;
   padding: 15px 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -163,7 +163,7 @@
 
 .page-title {
   text-align: center;
-  color: #2c3e50;
+  color: #eaeced;
   font-size: 36px;
   margin-bottom: 40px;
 }
@@ -176,7 +176,7 @@
 
 .category-card {
   display: block;
-  background-color: white;
+  background-color: rgb(239, 226, 226);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -259,12 +259,12 @@
 
 .recipe-title {
   font-size: 36px;
-  color: #2c3e50;
+  color: #d4d7da;
   margin: 0 0 10px 0;
 }
 
 .recipe-category {
-  color: #7f8c8d;
+  color: #d4d7da;
   font-size: 16px;
   margin-bottom: 20px;
 }
@@ -298,7 +298,7 @@
 
 .ingredients-section h2,
 .instructions-section h2 {
-  color: #2c3e50;
+  color: #d4d7da;
   margin-bottom: 20px;
 }
 
@@ -309,12 +309,12 @@
 
 .ingredients-list li {
   margin-bottom: 10px;
-  color: #34495e;
+  color: #d4d7da;
 }
 
 .instructions-text {
   line-height: 1.8;
-  color: #34495e;
+  color: #d4d7da;
 }
 
 /* Favorites Page  */
