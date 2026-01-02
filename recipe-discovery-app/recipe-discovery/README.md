@@ -63,11 +63,14 @@ My process started with assessing all of the project requirements and thinking a
 
 # My reflection:
 
-There were several challenging parts of this project in my opinion but, I will say that all of the challenges are helping me define my research for understanding. I know more of what type of information I'm looking for so my research is becoming quicker. It was a struggle to figure out why my search function was not working properly. I would type in the search field and nothing happened. Oh you forgot to add the return. This project required a lot of trouble shooting and debugging. It seemed like it took hours to debug for one issue and then another bug would appear. I have spent a lot of time trying to understand for loops and I actually understood conceptually how they work when I was trying to figure out how to display the recipe ingredients. Upon researching different methods for doing this I learned that if I manually tried accessing the ingredient list I could risk haveing empty list bullets that users could see if a particular recipe only had like six ingredients verses others that could have up to fifteen or more. A for loop was the smartest option which forced me to have more capacity for understanding the concept. Each project is helping me get better at something and I'm thankful for that. 
+There were several challenging parts of this project in my opinion but, I will say that all of the challenging parts helped me define my research for understanding. I know more of what type of information I'm looking for so my research inquiries are leading me to rationales quicker. 
+It was a struggle to figure out why my search function was not working properly. I would type in the search field and nothing happened. Oh you forgot to add the return. 
+This project required a lot of trouble shooting and debugging. It seemed like it took hours to debug for one issue and then another bug would appear. 
+However I did have a small light bulb momemt. I have spent a lot of time trying to understand for loops since October. I actually found some conceptual understanding of how they work when I was trying to figure out how to display the recipe ingredients. Upon researching different methods for doing this I learned that if I manually tried accessing the ingredient list I could risk haveing empty list bullets that users could see if a particular recipe only had like six ingredients versus others that could have up to fifteen or more. A for loop was the smartest option which forced me to have more capacity for understanding the concept. I don't know if this is going to help write a for loop every time I could use one but I'm glad I was able to try something different and make it work. Each project is helping me get better at something and I'm thankful for that.  
 
 
 # Acknowledgments:
-Discord group discussions. Class zoom recordings.Youtube: Imaginary Engineering, Angle Brace, Webstylepress, Bro Code, Code Stoic and dozens of other youtube channels.
+Discord group discussions: My classmates provided some really good videos and resources. Class zoom recordings with Tishana and Bryan.Youtube: Imaginary Engineering, Angle Brace, Webstylepress, Bro Code, Code Stoic and dozens of other youtube channels suggested by instructors and classmates.
 
 
 # Resources:
